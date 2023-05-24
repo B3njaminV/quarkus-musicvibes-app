@@ -1,3 +1,19 @@
-ALBUM: id, name, duration, genre, 
-ARTIST: id, name, 
-GENRE: id, name, 
+:
+:
+GENRE: id, name
+:
+
+:
+:
+POSSEDER3, 0N ALBUM, 1N GENRE
+:
+
+ARTIST: id, name
+POSSEDER2, 0N ALBUM, 01 ARTIST
+ALBUM: id, name, duration, genre, year
+:
+
+:
+:
+POSSEDER, 1N ALBUM, 0N SONG
+SONG: id, name, duration

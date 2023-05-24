@@ -1,16 +1,31 @@
 {
-  "width": 254,
-  "height": 136,
+  "width": 386,
+  "height": 396,
   "cx": [
-    [ "ALBUM", 40 ],
-    [ "ARTIST", 131 ],
-    [ "GENRE", 218 ]
+    [ "GENRE", 242 ],
+    [ "POSSEDER3", 242 ],
+    [ "ARTIST", 37 ],
+    [ "POSSEDER2", 138 ],
+    [ "ALBUM", 242 ],
+    [ "POSSEDER", 242 ],
+    [ "SONG", 346 ]
   ],
   "cy": [
-    [ "ALBUM", 68 ],
-    [ "ARTIST", 68 ],
-    [ "GENRE", 68 ]
+    [ "GENRE", 43 ],
+    [ "POSSEDER3", 127 ],
+    [ "ARTIST", 236 ],
+    [ "POSSEDER2", 236 ],
+    [ "ALBUM", 236 ],
+    [ "POSSEDER", 345 ],
+    [ "SONG", 345 ]
   ],
-  "shift": [],
+  "shift": [
+    [ "POSSEDER3,ALBUM,0", 0 ],
+    [ "POSSEDER3,GENRE,0", 0 ],
+    [ "POSSEDER2,ALBUM,0", 0 ],
+    [ "POSSEDER2,ARTIST,0", 0 ],
+    [ "POSSEDER,ALBUM,0", 0 ],
+    [ "POSSEDER,SONG,0", 0 ]
+  ],
   "ratio": []
 }
