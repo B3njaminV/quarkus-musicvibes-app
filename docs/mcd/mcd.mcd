@@ -1,0 +1,3 @@
+ALBUM: id, name, duration, genre, 
+ARTIST: id, name, 
+GENRE: id, name, 

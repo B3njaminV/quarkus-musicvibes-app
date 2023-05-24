@@ -1,0 +1,16 @@
+{
+  "width": 254,
+  "height": 136,
+  "cx": [
+    [ "ALBUM", 40 ],
+    [ "ARTIST", 131 ],
+    [ "GENRE", 218 ]
+  ],
+  "cy": [
+    [ "ALBUM", 68 ],
+    [ "ARTIST", 68 ],
+    [ "GENRE", 68 ]
+  ],
+  "shift": [],
+  "ratio": []
+}
