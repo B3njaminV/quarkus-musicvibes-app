@@ -1,23 +1,23 @@
 :
-:
-CONTAIN2, 0N PLAYLIST, 0N SONG
+OWN3, 0N PLAYLIST, 0N USER
 PLAYLIST: id, name
+CONTAIN2, 0N PLAYLIST, 0N SONG
+:
+
+STAR3, 0N ARTIST, 0N USER
+USER: id, username
+STAR, 0N SONG, 0N USER
+SONG: id, name, duration
 :
 
 ARTIST: id, name
+STAR2, 0N ALBUM, 0N USER
+OWN2, 0N ALBUM, 0N USER
 CONTAIN1, 1N ALBUM, 0N SONG
-SONG: id, name, duration
-STAR, 0N SONG, 0N USER
-OWN3, 0N PLAYLIST, 0N USER
+:
 
+:
 OWN, 0N ALBUM, 11 ARTIST
 ALBUM: id, name, duration, genre, year
-OWN2, 0N ALBUM, 0N USER
-USER: id, username
-:
-
-GENRE: id, name
 BELONG, 0N ALBUM, 11 GENRE
-:
-:
-:
+GENRE: id, name
