@@ -1,0 +1,232 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "ERDDataModel",
+			"_id": "AAAAAAGIcb6m4Huc6tI=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "ER",
+			"ownedElements": [
+				{
+					"_type": "ERDDiagram",
+					"_id": "AAAAAAGIcb6m4HudHj0=",
+					"_parent": {
+						"$ref": "AAAAAAGIcb6m4Huc6tI="
+					},
+					"name": "ERDDiagram1",
+					"ownedViews": [
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAGIcb61AnujYFA=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb6m4HudHj0="
+							},
+							"model": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGIcb61AnukGqM=",
+									"_parent": {
+										"$ref": "AAAAAAGIcb61AnujYFA="
+									},
+									"font": "Arial;13;1",
+									"left": 232,
+									"top": 261,
+									"width": 184.578125,
+									"height": 13,
+									"text": "Artist"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAGIcb61Anulwqk=",
+									"_parent": {
+										"$ref": "AAAAAAGIcb61AnujYFA="
+									},
+									"model": {
+										"$ref": "AAAAAAGIcb61AXuh5AU="
+									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGIccckvnvKFDk=",
+											"_parent": {
+												"$ref": "AAAAAAGIcb61Anulwqk="
+											},
+											"model": {
+												"$ref": "AAAAAAGIccckt3vHiFM="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 284,
+											"width": 174.578125,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGIceAFknv1kHU=",
+											"_parent": {
+												"$ref": "AAAAAAGIcb61Anulwqk="
+											},
+											"model": {
+												"$ref": "AAAAAAGIceAFi3vyPzQ="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 299,
+											"width": 174.578125,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGIcfaC9XwFL90=",
+											"_parent": {
+												"$ref": "AAAAAAGIcb61Anulwqk="
+											},
+											"model": {
+												"$ref": "AAAAAAGIcfaC7HwCH2Y="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 314,
+											"width": 174.578125,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGIcfwkNXwPqDU=",
+											"_parent": {
+												"$ref": "AAAAAAGIcb61Anulwqk="
+											},
+											"model": {
+												"$ref": "AAAAAAGIcfwkL3wMi/c="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 329,
+											"width": 174.578125,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGIceNe1nv98+8=",
+											"_parent": {
+												"$ref": "AAAAAAGIcb61Anulwqk="
+											},
+											"model": {
+												"$ref": "AAAAAAGIceNe0Hv6Qbs="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 344,
+											"width": 174.578125,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGIcf376HwYgwQ=",
+											"_parent": {
+												"$ref": "AAAAAAGIcb61Anulwqk="
+											},
+											"model": {
+												"$ref": "AAAAAAGIcf374nwVDbg="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 359,
+											"width": 174.578125,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 232,
+									"top": 279,
+									"width": 184.578125,
+									"height": 98
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 232,
+							"top": 256,
+							"width": 184.578125,
+							"height": 121,
+							"nameLabel": {
+								"$ref": "AAAAAAGIcb61AnukGqM="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAGIcb61Anulwqk="
+							}
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAGIcb61AXuh5AU=",
+					"_parent": {
+						"$ref": "AAAAAAGIcb6m4Huc6tI="
+					},
+					"name": "Artist",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGIccckt3vHiFM=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"name": "id",
+							"type": "ObjectID",
+							"primaryKey": true
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGIceAFi3vyPzQ=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"name": "name",
+							"type": "String"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGIcfaC7HwCH2Y=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"name": "cover"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGIcfwkL3wMi/c=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"name": "description"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGIceNe0Hv6Qbs=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"name": "origin_contry",
+							"type": "String"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGIcf374nwVDbg=",
+							"_parent": {
+								"$ref": "AAAAAAGIcb61AXuh5AU="
+							},
+							"name": "origin_date"
+						}
+					]
+				}
+			]
+		}
+	]
+}
