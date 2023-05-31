@@ -1,19 +1,23 @@
 :
 :
-GENRE: id, name
-:
-
-:
-:
-POSSEDER3, 0N ALBUM, 1N GENRE
+CONTAIN2, 0N PLAYLIST, 0N SONG
+PLAYLIST: id, name
 :
 
 ARTIST: id, name
-POSSEDER2, 0N ALBUM, 01 ARTIST
+CONTAIN1, 1N ALBUM, 0N SONG
+SONG: id, name, duration
+STAR, 0N SONG, 0N USER
+OWN3, 0N PLAYLIST, 0N USER
+
+OWN, 0N ALBUM, 11 ARTIST
 ALBUM: id, name, duration, genre, year
+OWN2, 0N ALBUM, 0N USER
+USER: id, username
 :
 
+GENRE: id, name
+BELONG, 0N ALBUM, 11 GENRE
 :
 :
-POSSEDER, 1N ALBUM, 0N SONG
-SONG: id, name, duration
+:

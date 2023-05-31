@@ -1,109 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="386" height="396" viewBox="0 0 386 396" xmlns="http://www.w3.org/2000/svg">
-<rect id="frame" x="0" y="0" width="386" height="396" fill="none" stroke="none" stroke-width="0"/>
+<svg width="445" height="396" viewBox="0 0 445 396" xmlns="http://www.w3.org/2000/svg">
+<rect id="frame" x="0" y="0" width="445" height="396" fill="none" stroke="none" stroke-width="0"/>
 
-<!-- Association POSSEDER3 -->
+<!-- Association CONTAIN2 -->
 <g>
-	<line x1="242" y1="236" x2="242" y2="127" stroke="#726f83" stroke-width="2"/>
-	<text x="247" y="169" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
-	<line x1="242" y1="43" x2="242" y2="127" stroke="#726f83" stroke-width="2"/>
-	<text x="247" y="94" fill="#726f83" font-family="Verdana" font-size="12">1,N</text>
+	<line x1="334" y1="43" x2="232" y2="43" stroke="#726f83" stroke-width="2"/>
+	<text x="273" y="60" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="232" y1="135" x2="232" y2="43" stroke="#726f83" stroke-width="2"/>
+	<text x="237" y="85" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
 	<g>
-		<path d="M269 102 a14 14 90 0 1 14 14 V127 h-82 V116 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
-		<path d="M283 127 v11 a14 14 90 0 1 -14 14 H215 a14 14 90 0 1 -14 -14 V127 H82" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
-		<rect x="201" y="102" width="82" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
-		<line x1="201" y1="127" x2="283" y2="127" stroke="#85956b" stroke-width="1"/>
-		<text x="209" y="119.75" fill="#27360c" font-family="Verdana" font-size="12">POSSEDER</text>
+		<path d="M254 18 a14 14 90 0 1 14 14 V43 h-72 V32 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M268 43 v11 a14 14 90 0 1 -14 14 H210 a14 14 90 0 1 -14 -14 V43 H72" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="196" y="18" width="72" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="196" y1="43" x2="268" y2="43" stroke="#85956b" stroke-width="1"/>
+		<text x="203" y="35.75" fill="#27360c" font-family="Verdana" font-size="12">CONTAIN</text>
 	</g>
 </g>
 
-<!-- Association POSSEDER2 -->
+<!-- Association CONTAIN1 -->
 <g>
-	<line x1="242" y1="236" x2="138" y2="236" stroke="#726f83" stroke-width="2"/>
-	<text x="184" y="253" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
-	<line x1="37" y1="236" x2="138" y2="236" stroke="#726f83" stroke-width="2"/>
-	<text x="70" y="253" fill="#726f83" font-family="Verdana" font-size="12">0,1</text>
+	<line x1="133" y1="244" x2="133" y2="135" stroke="#726f83" stroke-width="2"/>
+	<text x="138" y="177" fill="#726f83" font-family="Verdana" font-size="12">1,N</text>
+	<line x1="232" y1="135" x2="133" y2="135" stroke="#726f83" stroke-width="2"/>
+	<text x="174" y="152" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
 	<g>
-		<path d="M165 211 a14 14 90 0 1 14 14 V236 h-82 V225 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
-		<path d="M179 236 v11 a14 14 90 0 1 -14 14 H111 a14 14 90 0 1 -14 -14 V236 H82" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
-		<rect x="97" y="211" width="82" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
-		<line x1="97" y1="236" x2="179" y2="236" stroke="#85956b" stroke-width="1"/>
-		<text x="105" y="228.75" fill="#27360c" font-family="Verdana" font-size="12">POSSEDER</text>
+		<path d="M155 110 a14 14 90 0 1 14 14 V135 h-72 V124 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M169 135 v11 a14 14 90 0 1 -14 14 H111 a14 14 90 0 1 -14 -14 V135 H72" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="97" y="110" width="72" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="97" y1="135" x2="169" y2="135" stroke="#85956b" stroke-width="1"/>
+		<text x="104" y="127.75" fill="#27360c" font-family="Verdana" font-size="12">CONTAIN</text>
 	</g>
 </g>
 
-<!-- Association POSSEDER -->
+<!-- Association STAR -->
 <g>
-	<line x1="242" y1="236" x2="242" y2="345" stroke="#726f83" stroke-width="2"/>
-	<text x="247" y="312" fill="#726f83" font-family="Verdana" font-size="12">1,N</text>
-	<line x1="346" y1="345" x2="242" y2="345" stroke="#726f83" stroke-width="2"/>
-	<text x="288" y="362" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="232" y1="135" x2="334" y2="135" stroke="#726f83" stroke-width="2"/>
+	<text x="268" y="152" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="334" y1="244" x2="334" y2="135" stroke="#726f83" stroke-width="2"/>
+	<text x="307" y="202" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
 	<g>
-		<path d="M269 320 a14 14 90 0 1 14 14 V345 h-82 V334 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
-		<path d="M283 345 v11 a14 14 90 0 1 -14 14 H215 a14 14 90 0 1 -14 -14 V345 H82" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
-		<rect x="201" y="320" width="82" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
-		<line x1="201" y1="345" x2="283" y2="345" stroke="#85956b" stroke-width="1"/>
-		<text x="209" y="337.75" fill="#27360c" font-family="Verdana" font-size="12">POSSEDER</text>
+		<path d="M344 110 a14 14 90 0 1 14 14 V135 h-48 V124 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M358 135 v11 a14 14 90 0 1 -14 14 H324 a14 14 90 0 1 -14 -14 V135 H48" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="310" y="110" width="48" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="310" y1="135" x2="358" y2="135" stroke="#85956b" stroke-width="1"/>
+		<text x="318" y="127.75" fill="#27360c" font-family="Verdana" font-size="12">STAR</text>
 	</g>
 </g>
 
-<!-- Entity GENRE -->
+<!-- Association OWN3 -->
+<g>
+	<line x1="334" y1="43" x2="413" y2="135" stroke="#726f83" stroke-width="2"/>
+	<text x="342.51" y="94" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="334" y1="244" x2="413" y2="135" stroke="#726f83" stroke-width="2"/>
+	<text x="337.14" y="202" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<g>
+		<path d="M422 110 a14 14 90 0 1 14 14 V135 h-46 V124 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M436 135 v11 a14 14 90 0 1 -14 14 H404 a14 14 90 0 1 -14 -14 V135 H46" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="390" y="110" width="46" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="390" y1="135" x2="436" y2="135" stroke="#85956b" stroke-width="1"/>
+		<text x="398" y="127.75" fill="#27360c" font-family="Verdana" font-size="12">OWN</text>
+	</g>
+</g>
+
+<!-- Association OWN -->
+<g>
+	<line x1="133" y1="244" x2="37" y2="244" stroke="#726f83" stroke-width="2"/>
+	<text x="75" y="261" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="37" y1="135" x2="37" y2="244" stroke="#726f83" stroke-width="2"/>
+	<text x="42" y="186" fill="#726f83" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M46 219 a14 14 90 0 1 14 14 V244 h-46 V233 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M60 244 v11 a14 14 90 0 1 -14 14 H28 a14 14 90 0 1 -14 -14 V244 H46" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="14" y="219" width="46" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="14" y1="244" x2="60" y2="244" stroke="#85956b" stroke-width="1"/>
+		<text x="22" y="236.75" fill="#27360c" font-family="Verdana" font-size="12">OWN</text>
+	</g>
+</g>
+
+<!-- Association OWN2 -->
+<g>
+	<line x1="133" y1="244" x2="232" y2="244" stroke="#726f83" stroke-width="2"/>
+	<text x="169" y="261" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="334" y1="244" x2="232" y2="244" stroke="#726f83" stroke-width="2"/>
+	<text x="271" y="261" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<g>
+		<path d="M241 219 a14 14 90 0 1 14 14 V244 h-46 V233 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M255 244 v11 a14 14 90 0 1 -14 14 H223 a14 14 90 0 1 -14 -14 V244 H46" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="209" y="219" width="46" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="209" y1="244" x2="255" y2="244" stroke="#85956b" stroke-width="1"/>
+		<text x="217" y="236.75" fill="#27360c" font-family="Verdana" font-size="12">OWN</text>
+	</g>
+</g>
+
+<!-- Association BELONG -->
+<g>
+	<line x1="133" y1="244" x2="133" y2="353" stroke="#726f83" stroke-width="2"/>
+	<text x="138" y="320" fill="#726f83" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="37" y1="353" x2="133" y2="353" stroke="#726f83" stroke-width="2"/>
+	<text x="69" y="370" fill="#726f83" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M152 328 a14 14 90 0 1 14 14 V353 h-66 V342 a14 14 90 0 1 14 -14" fill="#b2bba4" stroke="#b2bba4" stroke-width="0"/>
+		<path d="M166 353 v11 a14 14 90 0 1 -14 14 H114 a14 14 90 0 1 -14 -14 V353 H66" fill="#ccd6ba" stroke="#ccd6ba" stroke-width="0"/>
+		<rect x="100" y="328" width="66" height="50" fill="none" rx="14" stroke="#85956b" stroke-width="2"/>
+		<line x1="100" y1="353" x2="166" y2="353" stroke="#85956b" stroke-width="1"/>
+		<text x="108" y="345.75" fill="#27360c" font-family="Verdana" font-size="12">BELONG</text>
+	</g>
+</g>
+
+<!-- Entity PLAYLIST -->
 <g>
 	<g>
-		<rect x="215" y="9" width="54" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
-		<rect x="215" y="34" width="54" height="43" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
-		<rect x="215" y="9" width="54" height="68" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
-		<line x1="215" y1="34" x2="269" y2="34" stroke="#578dff" stroke-width="1"/>
+		<rect x="300" y="9" width="68" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="300" y="34" width="68" height="43" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="300" y="9" width="68" height="68" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="300" y1="34" x2="368" y2="34" stroke="#578dff" stroke-width="1"/>
 	</g>
-	<text x="221" y="26.75" fill="#131114" font-family="Verdana" font-size="12">GENRE</text>
-	<text x="220" y="51.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
-	<line x1="220" y1="54" x2="232" y2="54" stroke="#3e3c42" stroke-width="1"/>
-	<text x="220" y="68.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
+	<text x="305" y="26.75" fill="#131114" font-family="Verdana" font-size="12">PLAYLIST</text>
+	<text x="305" y="51.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
+	<line x1="305" y1="54" x2="317" y2="54" stroke="#3e3c42" stroke-width="1"/>
+	<text x="305" y="68.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
 </g>
 
 <!-- Entity ARTIST -->
 <g>
 	<g>
-		<rect x="9" y="202" width="56" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
-		<rect x="9" y="227" width="56" height="43" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
-		<rect x="9" y="202" width="56" height="68" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
-		<line x1="9" y1="227" x2="65" y2="227" stroke="#578dff" stroke-width="1"/>
+		<rect x="9" y="101" width="56" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="9" y="126" width="56" height="43" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="9" y="101" width="56" height="68" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="9" y1="126" x2="65" y2="126" stroke="#578dff" stroke-width="1"/>
 	</g>
-	<text x="14" y="219.75" fill="#131114" font-family="Verdana" font-size="12">ARTIST</text>
-	<text x="14" y="244.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
-	<line x1="14" y1="247" x2="26" y2="247" stroke="#3e3c42" stroke-width="1"/>
-	<text x="14" y="261.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
-</g>
-
-<!-- Entity ALBUM -->
-<g>
-	<g>
-		<rect x="211" y="177" width="62" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
-		<rect x="211" y="202" width="62" height="93" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
-		<rect x="211" y="177" width="62" height="118" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
-		<line x1="211" y1="202" x2="273" y2="202" stroke="#578dff" stroke-width="1"/>
-	</g>
-	<text x="221" y="194.75" fill="#131114" font-family="Verdana" font-size="12">ALBUM</text>
-	<text x="216" y="219.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
-	<line x1="216" y1="222" x2="228" y2="222" stroke="#3e3c42" stroke-width="1"/>
-	<text x="216" y="236.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
-	<text x="216" y="253.8" fill="#3e3c42" font-family="Verdana" font-size="12">duration</text>
-	<text x="216" y="270.8" fill="#3e3c42" font-family="Verdana" font-size="12">genre</text>
-	<text x="216" y="287.8" fill="#3e3c42" font-family="Verdana" font-size="12">year</text>
+	<text x="14" y="118.75" fill="#131114" font-family="Verdana" font-size="12">ARTIST</text>
+	<text x="14" y="143.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
+	<line x1="14" y1="146" x2="26" y2="146" stroke="#3e3c42" stroke-width="1"/>
+	<text x="14" y="160.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
 </g>
 
 <!-- Entity SONG -->
 <g>
 	<g>
-		<rect x="315" y="303" width="62" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
-		<rect x="315" y="328" width="62" height="59" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
-		<rect x="315" y="303" width="62" height="84" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
-		<line x1="315" y1="328" x2="377" y2="328" stroke="#578dff" stroke-width="1"/>
+		<rect x="201" y="93" width="62" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="201" y="118" width="62" height="59" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="201" y="93" width="62" height="84" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="201" y1="118" x2="263" y2="118" stroke="#578dff" stroke-width="1"/>
 	</g>
-	<text x="328" y="320.75" fill="#131114" font-family="Verdana" font-size="12">SONG</text>
-	<text x="320" y="345.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
-	<line x1="320" y1="348" x2="332" y2="348" stroke="#3e3c42" stroke-width="1"/>
-	<text x="320" y="362.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
-	<text x="320" y="379.8" fill="#3e3c42" font-family="Verdana" font-size="12">duration</text>
+	<text x="214" y="110.75" fill="#131114" font-family="Verdana" font-size="12">SONG</text>
+	<text x="206" y="135.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
+	<line x1="206" y1="138" x2="218" y2="138" stroke="#3e3c42" stroke-width="1"/>
+	<text x="206" y="152.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
+	<text x="206" y="169.8" fill="#3e3c42" font-family="Verdana" font-size="12">duration</text>
+</g>
+
+<!-- Entity ALBUM -->
+<g>
+	<g>
+		<rect x="102" y="185" width="62" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="102" y="210" width="62" height="93" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="102" y="185" width="62" height="118" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="102" y1="210" x2="164" y2="210" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="112" y="202.75" fill="#131114" font-family="Verdana" font-size="12">ALBUM</text>
+	<text x="107" y="227.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
+	<line x1="107" y1="230" x2="119" y2="230" stroke="#3e3c42" stroke-width="1"/>
+	<text x="107" y="244.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
+	<text x="107" y="261.8" fill="#3e3c42" font-family="Verdana" font-size="12">duration</text>
+	<text x="107" y="278.8" fill="#3e3c42" font-family="Verdana" font-size="12">genre</text>
+	<text x="107" y="295.8" fill="#3e3c42" font-family="Verdana" font-size="12">year</text>
+</g>
+
+<!-- Entity USER -->
+<g>
+	<g>
+		<rect x="298" y="210" width="72" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="298" y="235" width="72" height="43" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="298" y="210" width="72" height="68" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="298" y1="235" x2="370" y2="235" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="317" y="227.75" fill="#131114" font-family="Verdana" font-size="12">USER</text>
+	<text x="303" y="252.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
+	<line x1="303" y1="255" x2="315" y2="255" stroke="#3e3c42" stroke-width="1"/>
+	<text x="303" y="269.8" fill="#3e3c42" font-family="Verdana" font-size="12">username</text>
+</g>
+
+<!-- Entity GENRE -->
+<g>
+	<g>
+		<rect x="10" y="319" width="54" height="25" fill="#97b8ff" stroke="#97b8ff" stroke-width="0" opacity="1"/>
+		<rect x="10" y="344" width="54" height="43" fill="#c0d4ff" stroke="#c0d4ff" stroke-width="0" opacity="1"/>
+		<rect x="10" y="319" width="54" height="68" fill="none" stroke="#578dff" stroke-width="2" opacity="1"/>
+		<line x1="10" y1="344" x2="64" y2="344" stroke="#578dff" stroke-width="1"/>
+	</g>
+	<text x="16" y="336.75" fill="#131114" font-family="Verdana" font-size="12">GENRE</text>
+	<text x="15" y="361.8" fill="#3e3c42" font-family="Verdana" font-size="12">id</text>
+	<line x1="15" y1="364" x2="27" y2="364" stroke="#3e3c42" stroke-width="1"/>
+	<text x="15" y="378.8" fill="#3e3c42" font-family="Verdana" font-size="12">name</text>
 </g>
 </svg>
