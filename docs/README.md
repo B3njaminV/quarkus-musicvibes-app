@@ -6,9 +6,9 @@
 
 ### Comments
 
-<img src="./uml/erd.svg" width="500" height="500">
-
 ## UML 
+
+<img src="./uml/erd.svg">
 
 ## Update documentation 
 
