@@ -1,14 +1,12 @@
-package org.musicApp.api;
-
-//import javax.ws.rs.*;
+package org.musicApp.controller;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import lombok.extern.slf4j.Slf4j;
-import org.musicApp.controller.MusicManager;
 import org.musicApp.module.Music;
+import org.musicApp.repository.MusicRepository;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
@@ -18,13 +16,13 @@ import java.util.Set;
 @Path("/api/musics")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class MusicAPI {
+public class MusicController {
 
     @Inject
-    MusicManager musicManagerController;
+    MusicRepository musicManagerController;
     private Set<Music> musicSet = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<>()));
 
-    public MusicAPI() {
+    public MusicController() {
         musicSet.add(new Music("lol"));
         musicSet.add(new Music("hello"));
         musicSet.add(new Music("cool"));
