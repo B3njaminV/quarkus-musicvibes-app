@@ -3,11 +3,15 @@ package org.musicApp.module;
 public class Music {
 
     private String name;
+    private String id;
 
 
     public Music(String name){
-
         this.name=name;
+    }
+
+    public Music(){
+        this.name = "Music";
     }
 
     public String getName() {
@@ -16,5 +20,13 @@ public class Music {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

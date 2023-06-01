@@ -1,16 +1,13 @@
 package org.musicApp.controller;
-
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.musicApp.module.Music;
-import org.musicApp.repository.MusicRepository;
+import org.musicApp.service.MusicService;
 
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Set;
+import java.util.List;
+
 
 @Slf4j
 @Path("/api/musics")
@@ -18,23 +15,39 @@ import java.util.Set;
 @Consumes(MediaType.APPLICATION_JSON)
 public class MusicController {
 
+    private final MusicService service;
+
     @Inject
-    MusicRepository musicManagerController;
-    private Set<Music> musicSet = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<>()));
-
-    public MusicController() {
-        musicSet.add(new Music("lol"));
-        musicSet.add(new Music("hello"));
-        musicSet.add(new Music("cool"));
-        musicSet.add(new Music("no"));
-
+    public MusicController(MusicService musicService) {
+        this.service = musicService;
     }
 
     @GET
-    public Response getAllMusic(){
-        System.out.println("hello i m the get");
-        //musicManagerController.getMusics();
-        return Response.ok(musicSet).build() ;
+    public List<Music> getAllMusics() {
+        return service.getAllMusics();
+    }
+
+    @GET
+    @Path("/{id}")
+    public Music getMusicById(@PathParam("id") String id) {
+        return service.getMusicById(id);
+    }
+
+    @POST
+    public void addMusic(Music music) {
+        service.addMusic(music);
+    }
+
+    @PUT
+    @Path("/{id}")
+    public void updateMusic(@PathParam("id") String id, Music oldMusic) {
+        service.updateMusic(id, oldMusic);
+    }
+
+    @DELETE
+    @Path("/{id}")
+    public void deleteMusic(@PathParam("id") String id) {
+        service.deleteMusic(id);
     }
 
 }
