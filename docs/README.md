@@ -36,7 +36,71 @@ An album and an artist can have a genre to classify them in
 
 ## UML 
 
-<img src="./uml/erd.svg">
+<img src="./uml/class_diagram.svg">
+
+## Schema
+
+## users
+
+```js
+{	
+	_id: ObjectId,
+	username: String,
+	password: String,
+
+	albums_playlists: [ ObjectId ],
+}
+```
+
+A user contains a collection of albums and playlists to represents library
+
+## users_stars
+
+```js
+{
+	_id: ObjectId,
+	start_date: ISODate,
+	end_date: ISODate,
+	user_id: ObjectId,
+
+	artists: [ ObjectId ],
+	albums: [ ObjectId ],
+	songs: [ ObjectId ],
+}
+```
+
+We implement Bucket Pattern because 
+
+## albums_playlists
+
+```js
+{
+	_id: ObjectId,
+	name: String,
+	cover: String,
+	description: String,
+	genres: [ String ],
+	songs: [
+		{
+			_id: ObjectId,
+			name: String,
+			duration: Number,
+			genres: [String],
+		}
+	],
+
+	artist: {
+		_id: ObjectId,
+		name: String,
+		cover: String,
+		description: String,
+		origin_country: String,
+		genres: [String],
+	},
+}
+```
+
+We implement Polymorphic Pattern because album and playlist have common informations
 
 ## Update documentation 
 
