@@ -22,8 +22,8 @@ public class MusicRepository {
 
     private final MongoCollection<Document> collection;
     private final MongoDatabase bdd;
-    private static final String MONGODB_URL = "mongodb://localhost:27017";
-    private static final String MONGODB_DATABASE = "lequipe";
+    private static final String MONGODB_URL = System.getenv("MONGO");
+    private static final String MONGODB_DATABASE = System.getenv("DATABASE");
 
     @Inject
     public MusicRepository() {
