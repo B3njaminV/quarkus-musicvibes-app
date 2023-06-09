@@ -38,9 +38,9 @@ An album and an artist can have a genre to classify them in
 
 <img src="./uml/class_diagram.svg">
 
-## Schema
+## MongoDB Schema
 
-## users
+## User
 
 ```js
 {	
@@ -48,44 +48,35 @@ An album and an artist can have a genre to classify them in
 	username: String,
 	password: String,
 
-	albums_playlists: [ ObjectId ],
+	library: [ 
+		{
+			album_playlist_id: ObjectId,
+			is_like: Boolean
+		}
+	],
 }
 ```
 
-A user contains a collection of albums and playlists to represents library
+A user contains a collection of albums and playlists to represents his library
 
-## users_stars
 
-```js
-{
-	_id: ObjectId,
-	start_date: ISODate,
-	end_date: ISODate,
-	user_id: ObjectId,
-
-	artists: [ ObjectId ],
-	albums: [ ObjectId ],
-	songs: [ ObjectId ],
-}
-```
-
-We implement Bucket Pattern because 
-
-## albums_playlists
+## AlbumPlaylist
 
 ```js
 {
 	_id: ObjectId,
 	name: String,
 	cover: String,
+	type: String,
 	description: String,
-	genres: [ String ],
+	genres: [String],
 	songs: [
 		{
 			_id: ObjectId,
 			name: String,
 			duration: Number,
 			genres: [String],
+			featuring: [ObjectId]
 		}
 	],
 
@@ -102,10 +93,21 @@ We implement Bucket Pattern because
 
 We implement Polymorphic Pattern because album and playlist have common informations
 
+
+## Genre
+
+```js
+{
+	_id: ObjectId,
+	name: String,
+	cover: String,
+}
+```
+
 ## Update documentation 
 
 For MCD documentation, we use [Mocodo Online](https://www.mocodo.net/)
 
 Copy [mcd.mcd](./mcd/mcd.mcd) and paste it to genrate MCD
 
-For ERD documentation, we use [Star UML](https://staruml.io/) 
+For UML documentation, we use [Star UML](https://staruml.io/) 
