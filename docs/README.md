@@ -36,7 +36,7 @@ An album and an artist can have a genre to classify them in
 
 ## UML 
 
-<img src="./uml/class_diagram.svg">
+<img src="./uml/class_diagramm.svg">
 
 ## Schema
 
