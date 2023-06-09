@@ -3,7 +3,7 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
-import org.musicApp.module.Music;
+import org.musicApp.module.Song;
 import org.musicApp.service.MusicService;
 
 import java.util.List;
@@ -23,24 +23,24 @@ public class MusicController {
     }
 
     @GET
-    public List<Music> getAllMusics() {
+    public List<Song> getAllMusics() {
         return service.getAllMusics();
     }
 
     @GET
     @Path("/{id}")
-    public Music getMusicById(@PathParam("id") String id) {
+    public Song getMusicById(@PathParam("id") String id) {
         return service.getMusicById(id);
     }
 
     @POST
-    public void addMusic(Music music) {
+    public void addMusic(Song music) {
         service.addMusic(music);
     }
 
     @PUT
     @Path("/{id}")
-    public void updateMusic(@PathParam("id") String id, Music oldMusic) {
+    public void updateMusic(@PathParam("id") String id, Song oldMusic) {
         service.updateMusic(id, oldMusic);
     }
 
