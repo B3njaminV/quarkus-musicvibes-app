@@ -5,32 +5,32 @@ import org.bson.types.ObjectId;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Album {
+public class AlbumPlaylist {
 
     private ObjectId id;
-    private Artist  artist;
+    private Artist artist;
     private String name;
     private List<Genre> genres = new ArrayList<>();
     private String cover;
     private String description;
-    private List<Song> musicList = new ArrayList<>();
+    private List<Song> songList = new ArrayList<>();
 
-    public Album(Artist artist, String name, List<Genre> genres, String cover, String description, List<Song> musicList){
+    public AlbumPlaylist(Artist artist, String name, List<Genre> genres, String cover, String description, List<Song> songList){
         this.artist = artist;
         this.name = name;
         this.genres = genres;
         this.cover = cover;
         this.description = description;
-        this.musicList = musicList;
+        this.songList = songList;
     }
 
-    public Album(){
+    public AlbumPlaylist(){
         this.artist = new Artist();
         this.name = "Album";
         this.genres = new ArrayList<>();
         this.cover = "Cover";
         this.description = "Description";
-        this.musicList = new ArrayList<>();
+        this.songList = new ArrayList<>();
     }
 
     public ObjectId getId() {
@@ -81,24 +81,24 @@ public class Album {
         this.description = description;
     }
 
-    public List<Song> getMusicList() {
-        return musicList;
+    public List<Song> getSongList() {
+        return songList;
     }
 
-    public void setMusicList(List<Song> musicList) {
-        this.musicList = musicList;
+    public void setSongList(List<Song> songList) {
+        this.songList = songList;
     }
 
     public void addSong(Song song){
-        this.musicList.add(song);
+        this.songList.add(song);
+    }
+
+    public void removeSong(Song song){
+        this.songList.remove(song);
     }
 
     public void addGenre(Genre genre){
         this.genres.add(genre);
-    }
-
-    public void removeSong(Song song){
-        this.musicList.remove(song);
     }
 
     public void removeGenre(Genre genre){
