@@ -1,16 +1,16 @@
 package org.musicApp.module;
 
-public class Music {
+public class Song {
 
     private String name;
     private String id;
 
 
-    public Music(String name){
+    public Song(String name){
         this.name=name;
     }
 
-    public Music(){
+    public Song(){
         this.name = "Music";
     }
 

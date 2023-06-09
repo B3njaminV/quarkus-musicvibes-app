@@ -8,7 +8,7 @@ import jakarta.inject.Singleton;
 import jakarta.ws.rs.*;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.musicApp.module.Music;
+import org.musicApp.module.Song;
 
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoClient;
@@ -32,16 +32,16 @@ public class MusicRepository {
         this.collection = bdd.getCollection("music");
     }
 
-    public List<Music> getAllMusics() {
-        List<Music> musics = new ArrayList<>();
+    public List<Song> getAllMusics() {
+        List<Song> musics = new ArrayList<>();
         for (Document doc : collection.find()) {
-            Music music = documentToMusic(doc);
+            Song music = documentToMusic(doc);
             musics.add(music);
         }
         return musics;
     }
 
-    public Music getMusicById(@PathParam("id") String id) {
+    public Song getMusicById(@PathParam("id") String id) {
         Document doc = collection.find(new Document("_id", new ObjectId(id))).first();
         if (doc != null) {
             return documentToMusic(doc);
@@ -49,13 +49,13 @@ public class MusicRepository {
         return null;
     }
 
-    public void addMusic(Music music) {
+    public void addMusic(Song music) {
         Document doc = musicToDocument(music);
         collection.insertOne(doc);
         music.setId(doc.getObjectId("_id").toString());
     }
 
-    public void updateMusic(@PathParam("id") String id, Music oldmusic) {
+    public void updateMusic(@PathParam("id") String id, Song oldmusic) {
         Document filter = new Document("_id", new ObjectId(id));
         Document update = musicToDocument(oldmusic);
         collection.updateOne(filter, new Document("$set", update));
@@ -65,13 +65,13 @@ public class MusicRepository {
         collection.deleteOne(new Document("_id", new ObjectId(id)));
     }
 
-    private Document musicToDocument(Music music) {
+    private Document musicToDocument(Song music) {
         return new Document("_id", new ObjectId(music.getId()))
                 .append("name", music.getName());
     }
 
-    private Music documentToMusic(Document doc) {
-        Music music = new Music();
+    private Song documentToMusic(Document doc) {
+        Song music = new Song();
         music.setId(doc.getObjectId("_id").toString());
         music.setName(doc.getString("name"));
         return music;
