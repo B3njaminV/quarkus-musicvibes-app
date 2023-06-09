@@ -3,51 +3,52 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
+import org.bson.types.ObjectId;
 import org.musicApp.module.Song;
-import org.musicApp.service.MusicService;
+import org.musicApp.service.SongService;
 
 import java.util.List;
 
 
 @Slf4j
-@Path("/api/musics")
+@Path("/api/songs")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class MusicController {
 
-    private final MusicService service;
+    private final SongService service;
 
     @Inject
-    public MusicController(MusicService musicService) {
+    public MusicController(SongService musicService) {
         this.service = musicService;
     }
 
     @GET
-    public List<Song> getAllMusics() {
-        return service.getAllMusics();
+    public List<Song> getAllSongs() {
+        return service.getAllSongs();
     }
 
     @GET
     @Path("/{id}")
-    public Song getMusicById(@PathParam("id") String id) {
-        return service.getMusicById(id);
+    public Song getSongById(ObjectId id) {
+        return service.getSongById(id);
     }
 
     @POST
-    public void addMusic(Song music) {
-        service.addMusic(music);
+    public void addSong(Song song) {
+        service.addSong(song);
     }
 
     @PUT
     @Path("/{id}")
-    public void updateMusic(@PathParam("id") String id, Song oldMusic) {
-        service.updateMusic(id, oldMusic);
+    public void updateSong(ObjectId id, Song song) {
+        service.updateSong(id, song);
     }
 
     @DELETE
     @Path("/{id}")
-    public void deleteMusic(@PathParam("id") String id) {
-        service.deleteMusic(id);
+    public void deleteSong(ObjectId id) {
+        service.deleteSong(id);
     }
 
 }
