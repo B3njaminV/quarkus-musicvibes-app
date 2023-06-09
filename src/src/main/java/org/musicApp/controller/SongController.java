@@ -14,12 +14,12 @@ import java.util.List;
 @Path("/api/songs")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class MusicController {
+public class SongController {
 
     private final SongService service;
 
     @Inject
-    public MusicController(SongService musicService) {
+    public SongController(SongService musicService) {
         this.service = musicService;
     }
 
