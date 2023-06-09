@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MusicManager {
-    private List<Music> favMusicList = new ArrayList<>();
+    private List<Song> favMusicList = new ArrayList<>();
     private List<Artist> favArtistList = new ArrayList<>();
     private  List<Album> favAlbumList = new ArrayList<>();
-
-
 
     public List<Album> getFavAlbumList() {
         return favAlbumList;
@@ -26,11 +24,11 @@ public class MusicManager {
         this.favArtistList = favArtistList;
     }
 
-    public List<Music> getFavMusicList() {
+    public List<Song> getFavMusicList() {
         return favMusicList;
     }
 
-    public void setFavMusicList(List<Music> favMusicList) {
+    public void setFavMusicList(List<Song> favMusicList) {
         this.favMusicList = favMusicList;
     }
 }

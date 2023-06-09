@@ -1,6 +1,6 @@
 package org.musicApp.service;
 
-import org.musicApp.module.Music;
+import org.musicApp.module.Song;
 import org.musicApp.repository.MusicRepository;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
@@ -16,19 +16,19 @@ public class MusicService {
         this.repository = musicRepository;
     }
 
-    public List<Music> getAllMusics() {
+    public List<Song> getAllMusics() {
         return repository.getAllMusics();
     }
 
-    public Music getMusicById(String id) {
+    public Song getMusicById(String id) {
         return repository.getMusicById(id);
     }
 
-    public void addMusic(Music music) {
+    public void addMusic(Song music) {
         repository.addMusic(music);
     }
 
-    public void updateMusic(String id, Music oldMusic) {
+    public void updateMusic(String id, Song oldMusic) {
         repository.updateMusic(id, oldMusic);
     }
 
