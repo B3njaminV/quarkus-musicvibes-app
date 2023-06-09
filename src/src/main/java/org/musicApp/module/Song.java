@@ -1,10 +1,11 @@
 package org.musicApp.module;
 
+import org.bson.types.ObjectId;
+
 public class Song {
 
     private String name;
-    private String id;
-
+    private ObjectId id;
 
     public Song(String name){
         this.name=name;
@@ -22,11 +23,11 @@ public class Song {
         this.name = name;
     }
 
-    public String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 }

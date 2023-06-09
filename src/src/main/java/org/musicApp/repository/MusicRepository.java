@@ -19,7 +19,6 @@ import java.util.List;
 
 @Singleton
 public class MusicRepository {
-
     private final MongoCollection<Document> collection;
     private final MongoDatabase bdd;
     private static final String MONGODB_URL = System.getenv("MONGO");
@@ -52,7 +51,7 @@ public class MusicRepository {
     public void addMusic(Song music) {
         Document doc = musicToDocument(music);
         collection.insertOne(doc);
-        music.setId(doc.getObjectId("_id").toString());
+        music.setId(doc.getObjectId("_id"));
     }
 
     public void updateMusic(@PathParam("id") String id, Song oldmusic) {
@@ -66,13 +65,13 @@ public class MusicRepository {
     }
 
     private Document musicToDocument(Song music) {
-        return new Document("_id", new ObjectId(music.getId()))
+        return new Document("_id", music.getId())
                 .append("name", music.getName());
     }
 
     private Song documentToMusic(Document doc) {
         Song music = new Song();
-        music.setId(doc.getObjectId("_id").toString());
+        music.setId(doc.getObjectId("_id"));
         music.setName(doc.getString("name"));
         return music;
     }
