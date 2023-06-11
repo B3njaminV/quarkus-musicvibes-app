@@ -1,46 +1,51 @@
 # Documentation
 
-## MCD
+<details>
+<summary> MCD </summary>
+<h2> MCD </h2>
 
-<img src="./mcd/mcd.svg" width="500" height="500">
+<img src="./mcd/mcd.svg" width="500" height="500"/>
 
-### Comments
+<h4> MCD Comments </h4>
 
-* User
+<ul>
+<li> User </li>
+<p>He represents the application user.<p>
+<p>He have a library of albums and playlists</p>
+<p>He can like an album to keep it as a favourite, and with statistics, the application can suggest similar content.</p>
 
-It represents the application user
+<li> Album </li>
+<p>It represents a list of songs created by an artist</p>
+<p>It has a type : Single, EP (Extended Play), Album</p>
 
-It can have a library of albums and playlists
+<li>Artist</li>
+<p>It represents the author of albums</p>
 
-It can star artists, albums and songs to analyse their tastes and preferences and offer them personalised content.
+<li>Song</li>
+<p>It represents the song of an album</p>
+<p>It can contains a list of artist featuring on it</p>
 
-* Album 
+<li>Playlist</li>
+<p>It will contain music that users can select from to create their own "album".</p>
 
-It represents a list of songs
+<li>Genre</li>
+<p>It represents a genre such as rock or dance</p>
+<p>An album, an artist and a song can have a genre to classify them in</p>
+</ul>	
+</details>
 
-It has different type : Single, EP (Extended Play), Album
-
-* Artist 
-
-It represents the author of albums
-
-* Playlist 
-
-It will contain music that users can select from to create their own "album".
-
-* Genre 
-
-It represents a genre such as rock or dance
-
-An album and an artist can have a genre to classify them in
-
-## UML 
+<details>
+<summary> UML </summary>
+<h2> UML </h2>
 
 <img src="./uml/class_diagram.svg">
+</details>
 
-## MongoDB Schema
+<details>
+<summary> MongoDB Schema </summary>
+<h2> MongoDB Schema </h2>
 
-## User
+<h4> User </h4>
 
 ```js
 {	
@@ -59,20 +64,18 @@ An album and an artist can have a genre to classify them in
 
 A user contains a collection of albums and playlists to represents his library
 
-
-## AlbumPlaylist
+<h4> AlbumPlayist </h4>
 
 ```js
 {
-	_id: ObjectId,
-	name: String,
+  _id: ObjectId,
+  name: String,
 	cover: String,
 	type: String,
 	description: String,
 	genres: [String],
 	songs: [
 		{
-			_id: ObjectId,
 			name: String,
 			duration: Number,
 			genres: [String],
@@ -81,7 +84,6 @@ A user contains a collection of albums and playlists to represents his library
 	],
 
 	artist: {
-		_id: ObjectId,
 		name: String,
 		cover: String,
 		description: String,
@@ -93,8 +95,31 @@ A user contains a collection of albums and playlists to represents his library
 
 We implement Polymorphic Pattern because album and playlist have common informations
 
+<h4> Song </h4>
 
-## Genre
+```js
+{
+	_id: ObjectId
+	name: String,
+	duration: Number,
+	genres: [String],
+}
+```
+
+<h4> Artist </h4>
+
+```js
+{
+	_id: ObjectId
+	name: String,
+	cover: String,
+	description: String,
+	origin_country: String,
+	genres: [String],
+}
+```
+
+<h4> Genre </h4>
 
 ```js
 {
@@ -103,11 +128,14 @@ We implement Polymorphic Pattern because album and playlist have common informat
 	cover: String,
 }
 ```
+</details>
 
 ## Update documentation 
 
-For MCD documentation, we use [Mocodo Online](https://www.mocodo.net/)
+For MCD, we use [Mocodo Online](https://www.mocodo.net/)
 
 Copy [mcd.mcd](./mcd/mcd.mcd) and paste it to genrate MCD
 
-For UML documentation, we use [Star UML](https://staruml.io/) 
+For UML, we use [Star UML](https://staruml.io/) 
+
+For Database we use [MongoDB](https://www.mongodb.com/)

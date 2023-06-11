@@ -1,23 +1,27 @@
 :
-:
-STAR3, 0N ARTIST, 0N USER
-ARTIST: id, name, cover, description, origin_country
-BELONG2, 0N ARTIST, 1N GENRE
-
 OWN3, 0N PLAYLIST, 0N USER
-USER: id, username, password
-STAR2, 0N ALBUM, 0N USER
-OWN, 0N ALBUM, 11 ARTIST
-GENRE: id, name
-
 PLAYLIST: id, name, cover
-STAR, 0N SONG, 0N USER
-OWN2, 0N ALBUM, 0N USER
-ALBUM: id, name, cover, type, creation_date
-BELONG, 0N ALBUM, 1N GENRE
-
 CONTAIN2, 0N PLAYLIST, 0N SONG
 SONG: id, name, duration
+BELONG3, 0N SONG, 1N GENRE
+
+LIKE, 0N ALBUM, 0N USER
+USER: id, username, password
+OWN2, 0N ALBUM, 0N USER
 CONTAIN1, 1N ALBUM, 0N SONG
+FEATURING ON, 0N SONG, 0N ARTIST
+:
+
+:
+ALBUM: id, name, cover, type, creation_date
+OWN, 0N ALBUM, 11 ARTIST
+ARTIST: id, name, cover, description, origin_country
+BELONG2, 0N ARTIST, 1N GENRE
+:
+
 :
 :
+BELONG, 0N ALBUM, 1N GENRE
+:
+:
+GENRE: id, name
