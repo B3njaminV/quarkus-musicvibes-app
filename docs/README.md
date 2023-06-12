@@ -56,15 +56,16 @@
 	library: [ 
 		{
 			album_playlist_id: ObjectId,
-			is_like: Boolean
+			is_like: Boolean,
 		}
 	],
 }
 ```
 
-A user contains a collection of albums and playlists to represents his library
+<p>A user contains a collection of albums and playlists to represents his library</p>
+<p>This album or playlist can be liked by user</p>
 
-<h4> AlbumPlayist </h4>
+<h4>AlbumPlayist</h4>
 
 ```js
 {
@@ -76,41 +77,49 @@ A user contains a collection of albums and playlists to represents his library
 	genres: [String],
 	songs: [
 		{
+			id: ObjectId,
+			number: Number,
 			name: String,
 			duration: Number,
-			genres: [String],
-			featuring: [ObjectId]
+			featuring: [
+				{
+					id: ObjectId,
+					name: String,
+				}
+			],
 		}
 	],
 
 	artist: {
+		id: ObjectId,
 		name: String,
-		cover: String,
-		description: String,
-		origin_country: String,
-		genres: [String],
 	},
 }
 ```
 
-We implement Polymorphic Pattern because album and playlist have common informations
+<p>We implement Polymorphic Pattern because album and playlist have common informations<p>
+<p>The only different field between us is Artist because a playliste is created by a user</p>
 
-<h4> Song </h4>
+<h4>Song</h4>
 
 ```js
 {
-	_id: ObjectId
+	_id: ObjectId,
+	number: Number,
 	name: String,
 	duration: Number,
 	genres: [String],
 }
 ```
 
-<h4> Artist </h4>
+<p>It represents all the app songs</p>
+
+<h4>Artist</h4>
 
 ```js
 {
-	_id: ObjectId
+	_id: ObjectId,
+	number: ObjectId,
 	name: String,
 	cover: String,
 	description: String,
@@ -119,7 +128,9 @@ We implement Polymorphic Pattern because album and playlist have common informat
 }
 ```
 
-<h4> Genre </h4>
+<p>It represents all the app artists</p>
+
+<h4>Genre</h4>
 
 ```js
 {
@@ -128,6 +139,8 @@ We implement Polymorphic Pattern because album and playlist have common informat
 	cover: String,
 }
 ```
+
+<p>It represents all the app genres</p>
 </details>
 
 ## Update documentation 
