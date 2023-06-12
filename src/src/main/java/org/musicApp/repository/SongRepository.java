@@ -5,10 +5,9 @@ import com.mongodb.client.MongoDatabase;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 
-import jakarta.ws.rs.*;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.musicApp.module.Song;
+import org.musicApp.model.Song;
 
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoClient;
