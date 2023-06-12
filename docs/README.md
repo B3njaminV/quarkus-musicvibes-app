@@ -74,7 +74,12 @@
 	cover: String,
 	type: String,
 	description: String,
-	genres: [String],
+	genres: [
+		{
+			id: ObjectId,
+			name: String,
+		}
+	],
 	songs: [
 		{
 			id: ObjectId,
@@ -108,7 +113,12 @@
 	number: Number,
 	name: String,
 	duration: Number,
-	genres: [String],
+	genres: [
+		{
+			id: ObjectId,
+			name: String,
+		}
+	],
 }
 ```
 
@@ -119,12 +129,16 @@
 ```js
 {
 	_id: ObjectId,
-	number: ObjectId,
 	name: String,
 	cover: String,
 	description: String,
 	origin_country: String,
-	genres: [String],
+	genres: [
+		{
+			id: ObjectId,
+			name: String,
+		}
+	],
 }
 ```
 
