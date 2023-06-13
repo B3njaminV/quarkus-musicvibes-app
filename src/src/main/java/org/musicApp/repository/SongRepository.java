@@ -20,13 +20,10 @@ import java.util.List;
 public class SongRepository {
     private final MongoCollection<Document> collection;
     private final MongoDatabase bdd;
-    private static final String MONGODB_URL = System.getenv("MONGO");
-    private static final String MONGODB_DATABASE = System.getenv("DATABASE");
 
     @Inject
     public SongRepository() {
-        MongoClient db = MongoClients.create(MONGODB_URL);
-        this.bdd = db.getDatabase(MONGODB_DATABASE);
+        this.bdd = DBConnection.getDatabase();
         this.collection = bdd.getCollection("song");
     }
 
