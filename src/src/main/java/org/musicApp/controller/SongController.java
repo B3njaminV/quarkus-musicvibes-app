@@ -4,7 +4,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
-import org.musicApp.module.Song;
+import org.musicApp.model.Song;
 import org.musicApp.service.SongService;
 
 import java.util.List;
@@ -19,8 +19,8 @@ public class SongController {
     private final SongService service;
 
     @Inject
-    public SongController(SongService musicService) {
-        this.service = musicService;
+    public SongController(SongService songService) {
+        this.service = songService;
     }
 
     @GET

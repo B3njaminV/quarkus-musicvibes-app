@@ -1,4 +1,4 @@
-package org.musicApp.module;
+package org.musicApp.model;
 
 import org.bson.types.ObjectId;
 
