@@ -10,10 +10,10 @@ public class Song {
 
     private ObjectId id;
     private String name;
-    private Number duration;
+    private Double duration;
     private List<Genre> genres = new ArrayList<>();
 
-    public Song(String name, Number duration, List<Genre> genres){
+    public Song(String name, Double duration, List<Genre> genres){
         this.name = name;
         this.duration = duration;
         this.genres = genres;
@@ -21,7 +21,7 @@ public class Song {
 
     public Song(){
         this.name = "Song";
-        this.duration = 0;
+        this.duration = 0.0;
         this.genres = new ArrayList<>();
     }
 
@@ -41,11 +41,11 @@ public class Song {
         this.name = name;
     }
 
-    public Number getDuration() {
+    public Double getDuration() {
         return duration;
     }
 
-    public void setDuration(Number duration) {
+    public void setDuration(Double duration) {
         this.duration = duration;
     }
 

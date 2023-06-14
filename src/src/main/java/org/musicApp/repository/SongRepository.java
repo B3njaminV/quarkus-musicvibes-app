@@ -21,7 +21,7 @@ public class SongRepository {
     @Inject
     public SongRepository() {
         this.bdd = DBConnection.getDatabase();
-        this.collection = bdd.getCollection("music");
+        this.collection = bdd.getCollection("song");
     }
 
     public List<Song> getAllSongs() {
