@@ -33,8 +33,8 @@ public class SongRepository {
         return songs;
     }
 
-    public Song getSongById(ObjectId id) {
-        Document doc = collection.find(new Document("_id", id)).first();
+    public Song getSongById(String id) {
+        Document doc = collection.find(new Document("_id", new ObjectId(id))).first();
         if (doc != null) {
             return documentToSong(doc);
         }
@@ -47,14 +47,14 @@ public class SongRepository {
         song.setId(doc.getObjectId("_id"));
     }
 
-    public void updateSong(ObjectId id, Song song) {
-        Document filter = new Document("_id", id);
+    public void updateSong(String id, Song song) {
+        Document filter = new Document("_id", new ObjectId(id));
         Document update = songToDocument(song);
         collection.updateOne(filter, new Document("$set", update));
     }
 
-    public void deleteSong(ObjectId id) {
-        collection.deleteOne(new Document("_id", id));
+    public void deleteSong(String id) {
+        collection.deleteOne(new Document("_id", new ObjectId(id)));
     }
 
     private Document songToDocument(Song song) {

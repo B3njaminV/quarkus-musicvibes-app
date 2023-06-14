@@ -21,7 +21,7 @@ public class SongService {
         return repository.getAllSongs();
     }
 
-    public Song getSongById(ObjectId id) {
+    public Song getSongById(String id) {
         return repository.getSongById(id);
     }
 
@@ -29,11 +29,11 @@ public class SongService {
         repository.addSong(song);
     }
 
-    public void updateSong(ObjectId id, Song song) {
+    public void updateSong(String id, Song song) {
         repository.updateSong(id, song);
     }
 
-    public void deleteSong(ObjectId id) {
+    public void deleteSong(String id) {
         repository.deleteSong(id);
     }
 }

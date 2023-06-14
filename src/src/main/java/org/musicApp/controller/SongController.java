@@ -30,24 +30,26 @@ public class SongController {
 
     @GET
     @Path("/{id}")
-    public Song getSongById(ObjectId id) {
+    public Song getSongById(@PathParam("id") String id) {
         return service.getSongById(id);
     }
 
     @POST
+    @Consumes(MediaType.APPLICATION_JSON)
     public void addSong(Song song) {
         service.addSong(song);
     }
 
     @PUT
     @Path("/{id}")
-    public void updateSong(ObjectId id, Song song) {
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void updateSong(@PathParam("id") String id, Song song) {
         service.updateSong(id, song);
     }
 
     @DELETE
     @Path("/{id}")
-    public void deleteSong(ObjectId id) {
+    public void deleteSong(@PathParam("id") String id) {
         service.deleteSong(id);
     }
 
