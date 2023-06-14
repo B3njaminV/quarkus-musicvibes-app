@@ -4,7 +4,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
-import org.musicApp.model.Song;
+import org.musicApp.entities.Song;
 import org.musicApp.service.SongService;
 
 import java.util.List;

@@ -7,10 +7,7 @@ import jakarta.inject.Singleton;
 
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.musicApp.model.Song;
-
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoClient;
+import org.musicApp.entities.Song;
 
 import java.util.ArrayList;
 import java.util.List;

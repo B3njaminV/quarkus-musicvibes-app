@@ -1,7 +1,10 @@
-package org.musicApp.model;
+package org.musicApp.entities;
+
+import org.bson.types.ObjectId;
 
 public class Artist {
-    private String id;
+
+    private ObjectId id;
     private String username;
     private String password;
 
@@ -15,11 +18,11 @@ public class Artist {
         this.password = "Artist";
     }
 
-    public String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 
@@ -39,4 +42,3 @@ public class Artist {
         this.password = password;
     }
 }
-

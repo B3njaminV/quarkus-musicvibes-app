@@ -1,11 +1,14 @@
-package org.musicApp.model;
+package org.musicApp.entities;
+
+import org.bson.types.ObjectId;
+import org.musicApp.model.Genre;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Song {
 
-    private String id;
+    private ObjectId id;
     private String name;
     private Number duration;
     private List<Genre> genres = new ArrayList<>();
@@ -22,11 +25,11 @@ public class Song {
         this.genres = new ArrayList<>();
     }
 
-    public String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 

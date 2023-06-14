@@ -1,4 +1,6 @@
-package org.musicApp.model;
+package org.musicApp.entities;
+
+import org.bson.types.ObjectId;
 
 import java.util.List;
 

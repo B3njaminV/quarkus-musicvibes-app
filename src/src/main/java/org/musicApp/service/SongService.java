@@ -1,7 +1,7 @@
 package org.musicApp.service;
 
 import org.bson.types.ObjectId;
-import org.musicApp.model.Song;
+import org.musicApp.entities.Song;
 import org.musicApp.repository.SongRepository;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
