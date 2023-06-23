@@ -1,51 +1,50 @@
 # Documentation
 
-<details>
-<summary> MCD </summary>
-<h2> MCD </h2>
+## MCD
 
 <img src="./mcd/mcd.svg" width="500" height="500"/>
 
-<h4> MCD Comments </h4>
+### Comments
 
-<ul>
-<li> User </li>
-<p>He represents the application user.<p>
-<p>He have a library of albums and playlists</p>
-<p>He can like an album to keep it as a favourite, and with statistics, the application can suggest similar content.</p>
+**User**
 
-<li> Album </li>
-<p>It represents a list of songs created by an artist</p>
-<p>It has a type : Single, EP (Extended Play), Album</p>
+He represents the application user.
 
-<li>Artist</li>
-<p>It represents the author of albums</p>
+He have a library of albums and playlists.
 
-<li>Song</li>
-<p>It represents the song of an album</p>
-<p>It can contains a list of artist featuring on it</p>
+He can like an album to keep it as a favourite, and with statistics, the application can suggest similar content.
 
-<li>Playlist</li>
-<p>It will contain music that users can select from to create their own "album".</p>
+**Album**
 
-<li>Genre</li>
-<p>It represents a genre such as rock or dance</p>
-<p>An album, an artist and a song can have a genre to classify them in</p>
-</ul>	
-</details>
+It represents a list of songs created by an artist
 
-<details>
-<summary> UML </summary>
-<h2> UML </h2>
+It has a type : Single, EP (Extended Play), Album
+
+**Artist**
+
+It represents the author of albums
+
+**Song**
+
+It represents the song of an album
+It can contains a list of artist featuring on it
+
+**Playlist**
+
+It will contain music that users can select from to create their own "album"
+
+**Genre**
+
+It represents a genre such as rock or dance
+An album, an artist and a song can have a genre to classify them in
+
+## UML
 
 <img src="./uml/class_diagram.svg">
-</details>
 
-<details>
-<summary> MongoDB Schema </summary>
-<h2> MongoDB Schema </h2>
+## Database Schema
 
-<h4> User </h4>
+**User**
 
 ```js
 {	
@@ -62,10 +61,11 @@
 }
 ```
 
-<p>A user contains a collection of albums and playlists to represents his library</p>
-<p>This album or playlist can be liked by user</p>
+A user contains a collection of albums and playlists to represents his library
 
-<h4>AlbumPlayist</h4>
+This album or playlist can be liked by user
+
+**AlbumPlayist**
 
 ```js
 {
@@ -102,10 +102,11 @@
 }
 ```
 
-<p>We implement Polymorphic Pattern because album and playlist have common informations<p>
-<p>The only different field between us is Artist because a playliste is created by a user</p>
+We implement Polymorphic Pattern because album and playlist have common informations
 
-<h4>Song</h4>
+The only different field between us is Artist because a playliste is created by a user
+
+**Song**
 
 ```js
 {
@@ -122,9 +123,9 @@
 }
 ```
 
-<p>It represents all the app songs</p>
+It represents all the app songs
 
-<h4>Artist</h4>
+**Artist**
 
 ```js
 {
@@ -142,9 +143,9 @@
 }
 ```
 
-<p>It represents all the app artists</p>
+It represents all the app artists
 
-<h4>Genre</h4>
+**Genre**
 
 ```js
 {
@@ -154,8 +155,7 @@
 }
 ```
 
-<p>It represents all the app genres</p>
-</details>
+It represents all the app genres
 
 ## Update documentation 
 
