@@ -1,0 +1,92 @@
+[
+  {
+    "_id": { "$oid":"5cdd3c1342faff70a4b87ca7"},
+    "artist": {
+      "name": "Artist 1"
+    },
+    "name": "AlbumPlaylist 1",
+    "genres": [
+      {
+        "name": "Pop"
+      },
+      {
+        "name": "Rock"
+      }
+    ],
+    "cover": "test.jpg",
+    "description": "Description playlist 1",
+    "songList": [
+      {
+        "_id": { "$oid":"5cdd3c1342faff70a4b87ca3"},
+        "name": "Bohemian Rhapsody",
+        "duration": 355.0,
+        "genres": [
+          {
+            "name": "Rock"
+          },
+          {
+            "name": "Progressive Rock"
+          }
+        ]
+      },
+      {
+        "_id": { "$oid":"5cdd3c1342faff70a4b87ca4"},
+        "name": "Shape of You",
+        "duration": 233.0,
+        "genres": [
+          {
+            "name": "Pop"
+          },
+          {
+            "name": "R&B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": { "$oid":"5cdd3c1342faff70a4b87ca8"},
+    "artist": {
+      "name": "Artist 2"
+    },
+    "name": "AlbumPlaylist 2",
+    "genres": [
+      {
+        "name": "Electronic"
+      },
+      {
+        "name": "Dance"
+      }
+    ],
+    "cover": "test.jpg",
+    "description": "Description playlist 2",
+    "songList": [
+      {
+        "_id": { "$oid":"5cdd3c1342faff70a4b87ca5"},
+        "name": "Hotel California",
+        "duration": 391.0,
+        "genres": [
+          {
+            "name": "Rock"
+          },
+          {
+            "name": "Classic Rock"
+          }
+        ]
+      },
+      {
+        "_id": { "$oid":"5cdd3c1342faff70a4b87ca6"},
+        "name": "Shape of My Heart",
+        "duration": 256.0,
+        "genres": [
+          {
+            "name": "Pop"
+          },
+          {
+            "name": "Soft Rock"
+          }
+        ]
+      }
+    ]
+  }
+]

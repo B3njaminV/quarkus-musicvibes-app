@@ -41,6 +41,23 @@ public class SongRepository {
         return null;
     }
 
+    public Song getSongByName(String name) {
+        Document doc = collection.find(new Document("name", name)).first();
+        if (doc != null) {
+            return documentToSong(doc);
+        }
+        return null;
+    }
+
+    public List<Song> getSongsByGenre(String genre) {
+        List<Song> songs = new ArrayList<>();
+        for (Document doc : collection.find(new Document("genres", genre))) {
+            Song song = documentToSong(doc);
+            songs.add(song);
+        }
+        return songs;
+    }
+
     public void addSong(Song song) {
         Document doc = songToDocument(song);
         collection.insertOne(doc);

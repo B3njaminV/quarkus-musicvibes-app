@@ -34,6 +34,18 @@ public class SongController {
         return service.getSongById(id);
     }
 
+    @GET
+    @Path("/name/{name}")
+    public Song getSongByName(@PathParam("name") String name) {
+        return service.getSongByName(name);
+    }
+
+    @GET
+    @Path("/genre/{genre}")
+    public List<Song> getSongsByGenre(@PathParam("genre") String genre) {
+        return service.getSongsByGenre(genre);
+    }
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void addSong(Song song) {
