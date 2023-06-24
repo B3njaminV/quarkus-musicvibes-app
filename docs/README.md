@@ -104,7 +104,9 @@ This album or playlist can be liked by user
 
 We implement Polymorphic Pattern because album and playlist have common informations
 
-The only different field between us is Artist because a playliste is created by a user
+The only different field between us is Artist because a playlist is created by a user
+
+For genres, songs and artists, we use denormalization so we have to be careful about updates
 
 **Song**
 
