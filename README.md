@@ -25,6 +25,10 @@ mongoimport --collection song song.json --db musicvibes
 mongoimport --collection albumPlaylist albumPlaylist.json --db musicvibes
 ```
 
+## ‍💻 Services
+
+Les différentes requêtes de recherche est la création des indexs se trouve dans les 2 fichiers repository `SongRepository` et `AlbumPlaylistRepository`
+
 ## ✍️ Auteur
 
 👤 **VALLEIX Benjamin**
