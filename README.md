@@ -4,6 +4,7 @@
 <h1 align="center"> Quarkus MusicVibes API 👋</h1>
 
 🏠 [Homepage](https://codefirst.iut.uca.fr/git/benjamin.valleix/quarkus-musicvibes-app) |
+💻 [Application react](https://codefirst.iut.uca.fr/git/benjamin.valleix/react-musicvibes-app) |
 📰 [Documentation](https://codefirst.iut.uca.fr/git/benjamin.valleix/quarkus-musicvibes-app/src/branch/master/docs)
 
 ---
@@ -27,7 +28,7 @@ mongoimport --collection albumPlaylist albumPlaylist.json --db musicvibes
 
 ## ‍💻 Services
 
-Les différentes requêtes de recherche est la création des indexs se trouve dans les 2 fichiers repository `SongRepository` et `AlbumPlaylistRepository`
+Les différentes requêtes de recherche et la création des indexs se trouve dans les 2 fichiers repository `SongRepository` et `AlbumPlaylistRepository`
 
 ## ✍️ Auteur
 
