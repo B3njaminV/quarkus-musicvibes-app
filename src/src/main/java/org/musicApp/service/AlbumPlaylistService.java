@@ -30,6 +30,14 @@ public class AlbumPlaylistService {
         return repository.getAlbumPlaylistByName(name);
     }
 
+    public List<AlbumPlaylist> getAlbumPlaylistsByArtist(String artist) {
+        return repository.getAlbumPlaylistsByArtist(artist);
+    }
+
+    public List<AlbumPlaylist> getAlbumPlaylistWithOneSong() {
+        return repository.getAlbumPlaylistWithOneSong();
+    }
+
     public void addAlbumPlaylist(AlbumPlaylist albumPlaylist) {
         repository.addAlbumPlaylist(albumPlaylist);
     }

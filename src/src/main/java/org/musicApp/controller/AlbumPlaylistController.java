@@ -39,6 +39,18 @@ public class AlbumPlaylistController {
         return service.getAlbumPlaylistByName(name);
     }
 
+    @GET
+    @Path("/author/{name}")
+    public List<AlbumPlaylist> getAlbumPlaylistsByArtist(@PathParam("name") String name) {
+        return service.getAlbumPlaylistsByArtist(name);
+    }
+
+    @GET
+    @Path("/getAlbumPlaylistWithOneSong")
+    public List<AlbumPlaylist> getAlbumPlaylistWithMinimumOneSong() {
+        return service.getAlbumPlaylistWithOneSong();
+    }
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void addAlbumPlaylist(AlbumPlaylist albumPlaylist) {

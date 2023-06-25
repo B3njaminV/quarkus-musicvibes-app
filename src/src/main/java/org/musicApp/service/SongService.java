@@ -1,5 +1,6 @@
 package org.musicApp.service;
 
+import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.musicApp.entities.Song;
 import org.musicApp.repository.SongRepository;
@@ -28,6 +29,18 @@ public class SongService {
 
     public Song getSongByName(String name) {
         return repository.getSongByName(name);
+    }
+
+    public List<Song>getAllSongWithPartialName(String name) {
+        return repository.getAllSongWithPartialName(name);
+    }
+
+    public List<Document> getSongCountByDuration() {
+        return repository.getSongCountByDuration();
+    }
+
+    public List<Song> getAllSongWithDurationSuperior120() {
+        return repository.getAllSongWithDurationSuperior120();
     }
 
     public List<Song> getSongsByGenre(String genre) {
